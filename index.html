@@ -13,236 +13,139 @@
 
         body {
             font-family: 'Georgia', serif;
-            background-color: #f5f5dc; /* Beige/Cream */
-            color: #000;
-        }
-
-        header {
-            background-color: #333;
-            padding: 1em;
+            background-color: #f5f5dc; /* Creamy beige background */
+            color: #000; /* Black text for elegance */
+            padding: 50px;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
         }
 
-        header h1, header a {
-            color: #fff;
+        h1, h2, h3 {
+            font-family: 'Georgia', serif;
+            text-transform: uppercase;
         }
 
-        nav {
-            margin-top: 10px;
-            font-size: 1.1em;
-        }
-
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .content {
-            max-width: 1000px;
-            margin: 50px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            font-size: 1.2em;
-        }
-
-        h2 {
-            font-size: 2em;
+        h1 {
+            font-size: 3em;
             margin-bottom: 20px;
-            padding-bottom: 10px;
             border-bottom: 2px solid #333;
-        }
-
-        /* About Section */
-        .about img {
-            border-radius: 50%;
-            width: 180px;
-            height: 180px;
-            object-fit: cover;
-            margin-right: 20px;
-        }
-
-        .about div {
-            flex: 1;
-        }
-
-        .about {
-            display: flex;
-            align-items: center;
-            margin-bottom: 30px;
-        }
-
-        .resume-link {
             display: inline-block;
-            margin-top: 20px;
-            color: #333;
-            font-weight: bold;
-            text-decoration: none;
-            border: 1px solid #333;
-            padding: 8px 12px;
-            border-radius: 5px;
+            padding-bottom: 10px;
         }
 
-        .resume-link:hover {
-            background-color: #333;
-            color: #fff;
+        .section-title {
+            font-size: 2em;
+            margin: 40px 0;
+            text-transform: uppercase;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
         }
 
-        /* Projects */
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
+        .menu-section {
+            margin-bottom: 40px;
         }
 
-        .project-card {
-            background-color: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.2s;
+        .menu-item {
+            margin-bottom: 20px;
         }
 
-        .project-card:hover {
-            transform: scale(1.05);
+        .menu-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
         }
 
-        .project-card h3 {
-            color: #007bff;
-        }
-
-        .project-card p {
+        .menu-item p {
+            font-style: italic;
             margin-bottom: 10px;
         }
 
-        .project-card a {
-            color: #007bff;
+        a {
+            color: #000;
             text-decoration: none;
+            font-weight: bold;
         }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #333;
-            color: #fff;
-            position: sticky;
-            bottom: 0;
-        }
-
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        footer a:hover {
+        a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>John Salloum</h1>
-        <p>Email: <a href="mailto:jsalloumjr@gmail.com">jsalloumjr@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a></p>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#blog">Blog</a>
-        </nav>
-    </header>
+    <!-- Restaurant Menu Style Layout -->
+    <h1>John Salloum</h1>
+    <p>Email: <a href="mailto:jsalloumjr@gmail.com">jsalloumjr@gmail.com</a> | <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a></p>
 
-    <div class="content">
-        <!-- About Me Section -->
-        <section id="about">
-            <h2>About Me</h2>
-            <div class="about">
-                <img src="your-photo-url-here" alt="John Salloum">
-                <div>
-                    <p>Hello! I'm John Salloum, a passionate data scientist focused on using data to drive impactful solutions. Below, you'll find my resume and links to get in touch with me.</p>
-                    <a class="resume-link" href="your_resume_link_here" target="_blank">Download Resume</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>My Projects</h2>
-            <div class="projects">
-                <div class="project-card">
-                    <h3>Boston Building Violations</h3>
-                    <p>Languages: Python, SQL</p>
-                    <p>A data analysis project on building violations across Boston using public datasets.</p>
-                    <a href="https://github.com/BU-Spark/ds-boston-building-violations" target="_blank">View Project Repo</a>
-                </div>
-                <div class="project-card">
-                    <h3>Sen. Markey Earmarks Analysis</h3>
-                    <p>Languages: Python, Excel</p>
-                    <p>Analyzing federal funding allocations for underserved communities in Massachusetts.</p>
-                    <p><em>(This repository is private)</em></p>
-                </div>
-                <div class="project-card">
-                    <h3>DS 310 Instructor Materials</h3>
-                    <p>Languages: Python, Jupyter</p>
-                    <p>Resources developed for teaching data science fundamentals at Boston University.</p>
-                    <p><em>(This repository is private)</em></p>
-                </div>
-                <div class="project-card">
-                    <h3>Data Science Fundamentals</h3>
-                    <p>Languages: Python, pandas</p>
-                    <p>An introductory project on basic data science concepts like data cleaning and visualization.</p>
-                    <a href="https://github.com/John3019/Data-Science-Fundamentals" target="_blank">View Project Repo</a>
-                </div>
-                <div class="project-card">
-                    <h3>Transfer Market Analysis</h3>
-                    <p>Languages: Python, R</p>
-                    <p>Statistical analysis of player transfers in football, analyzing market trends and valuations.</p>
-                    <a href="https://github.com/John3019/Transfer-Market-Analysis" target="_blank">View Project Repo</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog">
-            <h2>Blog</h2>
-            <div class="projects">
-                <!-- Blog Post 1 -->
-                <div class="project-card">
-                    <h3>Understanding Bias in Machine Learning</h3>
-                    <p>Exploring the sources of bias in machine learning algorithms and techniques to mitigate them in real-world applications.</p>
-                    <a href="https://your-blog-link-here.com/bias-in-ml" target="_blank">Read More</a>
-                </div>
-
-                <!-- Blog Post 2 -->
-                <div class="project-card">
-                    <h3>Data Visualization Best Practices</h3>
-                    <p>A guide to effectively visualizing complex data, focusing on clarity, storytelling, and avoiding common pitfalls.</p>
-                    <a href="https://your-blog-link-here.com/data-visualization" target="_blank">Read More</a>
-                </div>
-
-                <!-- Blog Post 3 -->
-                <div class="project-card">
-                    <h3>The Power of Big Data in Healthcare</h3>
-                    <p>How big data is transforming healthcare, with case studies on predictive analytics, personalized medicine, and more.</p>
-                    <a href="https://your-blog-link-here.com/big-data-healthcare" target="_blank">Read More</a>
-                </div>
-            </div>
-        </section>
+    <!-- About Me Section -->
+    <div class="menu-section">
+        <h2 class="section-title">About Me</h2>
+        <div class="menu-item">
+            <h3>Photo</h3>
+            <img src="your-photo-url-here" alt="John Salloum" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 20px;">
+            <p>Hello! I'm John Salloum, a passionate data scientist with expertise in building data-driven solutions.</p>
+            <a href="your_resume_link_here" target="_blank">Download Resume</a>
+        </div>
     </div>
 
-    <footer>
-        <p>&copy; 2024 John Salloum | <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a> | <a href="mailto:jsalloumjr@gmail.com">Email Me</a></p>
-    </footer>
+    <!-- Projects Section -->
+    <div class="menu-section">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="menu-item">
+            <h3>Boston Building Violations</h3>
+            <p>A data analysis project focused on identifying patterns in building violations across Boston using public datasets.</p>
+            <a href="https://github.com/BU-Spark/ds-boston-building-violations" target="_blank">View Project Repo</a>
+        </div>
+
+        <div class="menu-item">
+            <h3>Sen. Markey Earmarks Analysis</h3>
+            <p>This project, conducted for Sen. Edward J. Markey's office, involved analyzing federal funding allocations to underserved communities in Massachusetts.</p>
+            <p><em>(This repository is private)</em></p>
+        </div>
+
+        <div class="menu-item">
+            <h3>DS 310 Instructor Materials</h3>
+            <p>A repository for course materials and instructional resources developed for teaching data science fundamentals at Boston University.</p>
+            <p><em>(This repository is private)</em></p>
+        </div>
+
+        <div class="menu-item">
+            <h3>Data Science Fundamentals</h3>
+            <p>An introductory project focused on basic data science concepts, including data cleaning, visualization, and analysis using Python and pandas.</p>
+            <a href="https://github.com/John3019/Data-Science-Fundamentals" target="_blank">View Project Repo</a>
+        </div>
+
+        <div class="menu-item">
+            <h3>Transfer Market Analysis</h3>
+            <p>An in-depth analysis of player transfers in the football world, using statistical methods to analyze market trends and player valuations.</p>
+            <a href="https://github.com/John3019/Transfer-Market-Analysis" target="_blank">View Project Repo</a>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <div class="menu-section">
+        <h2 class="section-title">Blog</h2>
+
+        <div class="menu-item">
+            <h3>Understanding Bias in Machine Learning</h3>
+            <p>Exploring the sources of bias in machine learning algorithms and techniques to mitigate them in real-world applications.</p>
+            <a href="https://your-blog-link-here.com/bias-in-ml" target="_blank">Read More</a>
+        </div>
+
+        <div class="menu-item">
+            <h3>Data Visualization Best Practices</h3>
+            <p>A guide to effectively visualizing complex data, focusing on clarity, storytelling, and avoiding common pitfalls.</p>
+            <a href="https://your-blog-link-here.com/data-visualization" target="_blank">Read More</a>
+        </div>
+
+        <div class="menu-item">
+            <h3>The Power of Big Data in Healthcare</h3>
+            <p>How big data is transforming healthcare, with case studies on predictive analytics, personalized medicine, and more.</p>
+            <a href="https://your-blog-link-here.com/big-data-healthcare" target="_blank">Read More</a>
+        </div>
+    </div>
+
+    <!-- Footer (Credentials) -->
+    <p style="margin-top: 50px;">&copy; 2024 John Salloum | <a href="mailto:jsalloumjr@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/yourlinkedinprofile" target="_blank">LinkedIn</a></p>
 
 </body>
 </html>
